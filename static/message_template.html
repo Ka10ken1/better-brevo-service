@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>თარგმნის სახლი - სპეციალური შეთავაზება</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #24505a, #1e434c);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .header-content h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header-content p {
+            margin: 5px 0 0;
+        }
+        .content {
+            padding: 30px;
+        }
+        .special-offer {
+            background: #e8f2f4;
+            border: 2px solid #24505a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .special-offer h2 {
+            color: #24505a;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .offer-list {
+            list-style: none;
+            padding: 0;
+        }
+        .offer-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .offer-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #24505a;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 5px 0;
+            padding: 12px 24px;
+            background-color: #ffb400;
+            color: #1e1e1e;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .btn-secondary {
+            background: white;
+            color: #24505a;
+            border: 2px solid #24505a;
+        }
+        .price-section h2,
+        .why-choose h2,
+        .languages h2 {
+            color: #24505a;
+            text-align: center;
+        }
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .price-table th,
+        .price-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .why-choose,
+        .languages {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .language-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .language {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-section {
+            background: linear-gradient(135deg, #24505a, #1e434c);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <div class="header">
+        <img src="https://th.com.ge/assets/images/logo.jpg" alt="თარგმნის სახლი" class="logo">
+        <div class="header-content">
+            <h1>თარგმნის სახლი</h1>
+            <p>სატენდერო დოკუმენტების თარგმნა და ნოტარიული დამოწმება</p>
+        </div>
+    </div>
+    <div class="content">
+        <p style="font-size: 1.1em;">თუ თქვენი კომპანია <strong>სახელმწიფო შესყიდვებში მონაწილეობს</strong>, გთავაზობთ სპეციალურ პირობებს დოკუმენტაციის თარგმნისთვის.</p>
+        <div class="special-offer">
+            <h2>სპეციალური შეთავაზება თქვენთვის:</h2>
+            <ul class="offer-list">
+                <li><strong>10%-იანი ფასდაკლება</strong> პირველ თარგმანზე</li>
+                <li><strong>დაჩქარებული შესრულება</strong> – დროული მიწოდება გარანტირებულია</li>
+                <li><strong>პერსონალური მენეჯერი</strong> თქვენი პროექტისთვის</li>
+            </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align: center;">
+            <a href="https://wa.me/995568420553" class="btn">💬 მომწერეთ WhatsApp-ზე</a>
+            <a href="tel:+995568420553" class="btn btn-secondary">📞 დარეკვა ახლა</a>
+            <p style="font-size: 0.9em; margin-top: 10px;">დავიწყოთ დღესვე თქვენი თარგმნის პროცესი</p>
+        </div>
+
+        <div class="price-section">
+            <h2>ფასთა ცხრილი</h2>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>ენა</th>
+                        <th>თარგმნა</th>
+                        <th>თარგმნა + დამოწმება</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>🇬🇧 ინგლისური</td><td>20₾</td><td>27₾ – 22₾</td></tr>
+                    <tr><td>🇹🇷 თურქული</td><td>25₾</td><td>32₾ – 27₾</td></tr>
+                    <tr><td>🇩🇪 გერმანული</td><td>25₾</td><td>32₾ – 27₾</td></tr>
+                    <tr><td>🇨🇳 ჩინური</td><td>68₾</td><td>75₾ – 70₾</td></tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; font-size: 0.9em;"><em>* ემატება 5₾ ნოტარიუსის მიერ აკინძვის ღირებულება</em></p>
+        </div>
+
+        <div class="why-choose">
+            <h2>რატომ უნდა აირჩიოთ თარგმნის სახლი?</h2>
+            <ul class="offer-list">
+                <li>სერტიფიცირებული და გამოცდილი თარჯიმნები</li>
+                <li>ნოტარიული დამოწმება</li>
+                <li>სწრაფი შესრულება</li>
+                <li>კონკურენტული ფასები</li>
+            </ul>
+        </div>
+
+        <div class="languages">
+            <h2>ჩვენი ენები</h2>
+            <div class="language-grid">
+                <div class="language">🇬🇧 ინგლისური</div>
+                <div class="language">🇷🇺 რუსული</div>
+                <div class="language">🇩🇪 გერმანული</div>
+                <div class="language">🇫🇷 ფრანგული</div>
+                <div class="language">🇨🇳 ჩინური</div>
+                <div class="language">🇹🇷 თურქული</div>
+                <div class="language">🇺🇦 უკრაინული</div>
+                <div class="language">🌍 სხვა</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>დაგვიკავშირდით მარტივად</h2>
+        <p>📞 <a href="tel:+995568420553" style="color:white; text-decoration: underline;">+995 568 42 05 53</a></p>
+        <p>📧 <a href="mailto:info@th.com.ge" style="color:white; text-decoration: underline;">info@th.com.ge</a></p>
+        <a href="https://wa.me/995568420553" class="btn">💬 WhatsApp-ზე მიწერა</a>
+        <a href="tel:+995568420553" class="btn btn-secondary">📞 დარეკვა ახლა</a>
+        <div style="margin-top: 30px;">
+            <h3 style="color: #ffffff;">✅ ჩვენ გვენდობა 200+ კომპანია</h3>
+            <p>📄 ზუსტი თარგმანი | ⏱️ დროული მიწოდება | 🔒 კონფიდენციალურობა</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>თარგმნის სახლი</h3>
+        <p>თბილისი, ც. დადიანის 7 (ქარვასლა)</p>
+        <p>© 2025 ყველა უფლება დაცულია</p>
+    </div>
+</div>
+</body>
+</html>
+

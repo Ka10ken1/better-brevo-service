@@ -3,8 +3,7 @@ package main
 import (
 	"log"
 	"time"
-
-	"github.com/Ka10ken1/better-brevo-service/internal"
+	"github.com/Ka10ken1/better-brevo-service/internal/background"
 	"github.com/robfig/cron/v3"
 )
 
@@ -19,7 +18,7 @@ func main() {
 	// Run() at 2:00 AM every day
 	_, err = c.AddFunc("0 2 * * *", func() {
 		log.Println("Running scheduled task at", time.Now().Format(time.RFC3339))
-		internal.Run()
+		background.Run()
 	})
 
 	if err != nil {

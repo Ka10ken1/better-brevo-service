@@ -1,4 +1,4 @@
-package internal
+package background
 
 import (
 	"log"
@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 	"time"
+	"github.com/Ka10ken1/better-brevo-service/internal/brevo"
 )
 
 
@@ -30,5 +31,6 @@ func Run() {
 		return
 	}
 
-	Start(todayPath)
+	brevo.Start(todayPath)
 }
+

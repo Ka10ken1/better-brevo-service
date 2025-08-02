@@ -1,4 +1,4 @@
-package internal
+package brevo
 
 import (
 	"bytes"
@@ -791,3 +791,4 @@ func Start(csvPath string) {
         log.Printf("Error: %s (%s)", errResult.Error, errResult.Details)
     }
 }
+
